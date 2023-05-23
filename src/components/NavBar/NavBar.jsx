@@ -20,7 +20,7 @@ const NavBar = () => {
                 }
             </div>
 
-            <ul className={` bg-purple-600 w-full md:flex justify-center absolute md:static duration-500 ease-in ${open ? 'top-6' : 'top-[-120px]'}`}>
+            <ul className={` bg-purple-600 w-full md:flex p-6 justify-center absolute md:static duration-500 ease-in ${open ? 'top-6' : 'top-[-120px]'}`}>
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link>)
                 }
